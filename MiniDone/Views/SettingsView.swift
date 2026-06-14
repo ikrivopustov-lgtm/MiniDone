@@ -3,7 +3,7 @@ import SwiftUI
 struct SettingsView: View {
     @AppStorage(Constants.StorageKeys.language) private var languageRawValue = AppLanguage.russian.rawValue
     @AppStorage(Constants.StorageKeys.theme) private var themeRawValue = AppTheme.system.rawValue
-    @AppStorage(Constants.StorageKeys.hasCompletedOnboarding) private var hasCompletedOnboarding = true
+    @AppStorage(Constants.StorageKeys.hasCompletedOnboarding) private var hasCompletedOnboarding = false
 
     private var language: AppLanguage {
         SettingsViewModel.language(from: languageRawValue)

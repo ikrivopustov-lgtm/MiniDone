@@ -28,6 +28,10 @@ GitHub also shows automatic **Source code** downloads. Those are for developers 
 - Local-first SwiftData storage.
 - First-run onboarding for the main workflows.
 
+## Fixes
+
+- First-run onboarding now appears reliably for the current v1 walkthrough, even if an earlier local build had already saved the old onboarding flag.
+
 ## Privacy
 
 MiniDone has no account login, analytics, cloud backend, WebView, or network sync in this codebase. Task data is stored locally on your Mac.

@@ -70,10 +70,14 @@ struct MiniDoneApp: App {
             environment["MINIDONE_THEME"] ?? AppTheme.system.rawValue,
             forKey: Constants.StorageKeys.theme
         )
-        UserDefaults.standard.set(
-            environment["MINIDONE_ONBOARDING_COMPLETED"] != "0",
-            forKey: Constants.StorageKeys.hasCompletedOnboarding
-        )
+        if let onboardingCompleted = environment["MINIDONE_ONBOARDING_COMPLETED"] {
+            UserDefaults.standard.set(
+                onboardingCompleted != "0",
+                forKey: Constants.StorageKeys.hasCompletedOnboarding
+            )
+        } else if environment["MINIDONE_RESET_ONBOARDING"] == "1" {
+            UserDefaults.standard.removeObject(forKey: Constants.StorageKeys.hasCompletedOnboarding)
+        }
         UserDefaults.standard.set(false, forKey: "NSQuitAlwaysKeepsWindows")
         UserDefaults.standard.set(true, forKey: "ApplePersistenceIgnoreState")
     }

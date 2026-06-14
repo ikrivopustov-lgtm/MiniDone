@@ -20,7 +20,7 @@ enum Constants {
         static let language = "settings.language"
         static let theme = "settings.theme"
         static let miniWindowHeight = "window.mini.height"
-        static let hasCompletedOnboarding = "onboarding.completed"
+        static let hasCompletedOnboarding = "onboarding.v1.completed"
     }
 
     enum DragPayload {

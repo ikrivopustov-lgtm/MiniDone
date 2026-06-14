@@ -142,6 +142,19 @@ final class MiniDoneUITests: XCTestCase {
         XCTAssertTrue(onboardingElement(identifier: "onboardingSheet").waitForNonExistence(timeout: 3))
     }
 
+    func testOnboardingAppearsWhenCompletionPreferenceIsMissing() {
+        app.terminate()
+        app = makeApp(language: "ru", theme: "system", onboardingCompleted: nil)
+        app.launch()
+        waitForMainWindow()
+
+        XCTAssertTrue(onboardingElement(identifier: "onboardingSheet").waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Познакомимся с MiniDone"].waitForExistence(timeout: 3))
+
+        onboardingButton(title: "Пропустить").click()
+        XCTAssertTrue(onboardingElement(identifier: "onboardingSheet").waitForNonExistence(timeout: 3))
+    }
+
     func testSettingsCanShowOnboardingAgain() {
         sidebarItem("sidebarSettings").click()
 
@@ -158,7 +171,7 @@ final class MiniDoneUITests: XCTestCase {
         language: String,
         theme: String,
         seed: String? = nil,
-        onboardingCompleted: Bool = true
+        onboardingCompleted: Bool? = true
     ) -> XCUIApplication {
         let app = XCUIApplication()
         let storeURL = FileManager.default.temporaryDirectory
@@ -170,7 +183,11 @@ final class MiniDoneUITests: XCTestCase {
         app.launchEnvironment["MINIDONE_THEME"] = theme
         app.launchEnvironment["MINIDONE_STORE_URL"] = storeURL.path
         app.launchEnvironment["MINIDONE_RESET_STORE"] = "1"
-        app.launchEnvironment["MINIDONE_ONBOARDING_COMPLETED"] = onboardingCompleted ? "1" : "0"
+        if let onboardingCompleted {
+            app.launchEnvironment["MINIDONE_ONBOARDING_COMPLETED"] = onboardingCompleted ? "1" : "0"
+        } else {
+            app.launchEnvironment["MINIDONE_RESET_ONBOARDING"] = "1"
+        }
         if let seed {
             app.launchEnvironment["MINIDONE_SEED_SCENARIO"] = seed
         }
