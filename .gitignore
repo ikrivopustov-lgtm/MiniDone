@@ -1,0 +1,16 @@
+.DS_Store
+DerivedData/
+build/
+dist/
+Release/
+*.xcuserstate
+*.xcuserdata/
+*.xcuserdatad/
+*.moved-aside
+*.xcresult/
+*.xcarchive/
+*.dSYM/
+*.zip
+*.dmg
+*.pkg
+*.ipa

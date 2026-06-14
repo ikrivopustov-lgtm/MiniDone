@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiniDone Security Review</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8f5;
+      --card: #ffffff;
+      --text: #1c211f;
+      --muted: #5d6862;
+      --line: #d9e0d8;
+      --accent: #2f8d56;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171a18;
+        --card: #202421;
+        --text: #eef3ef;
+        --muted: #aab5ae;
+        --line: #333b35;
+        --accent: #63c987;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(34px, 6vw, 56px);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    code {
+      color: var(--text);
+      background: color-mix(in srgb, var(--accent) 10%, transparent);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 1px 5px;
+    }
+
+    .summary {
+      margin: 28px 0;
+      padding: 20px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .ok {
+      color: var(--accent);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MiniDone Security Review</h1>
+    <p>Last reviewed: June 14, 2026</p>
+
+    <section class="summary">
+      <p><span class="ok">Status:</span> no confirmed data exfiltration, secret leakage, network, WebView, shell execution, or credential-handling findings were found in the reviewed codebase.</p>
+      <p>MiniDone is local-first. Release packaging now produces a clean app zip and rejects debug/test artifacts before upload.</p>
+    </section>
+
+    <h2>Stored Data</h2>
+    <ul>
+      <li>Tasks: title, status, dates, ordering, recurrence, project, and tags.</li>
+      <li>Projects: name, creation date, and color index.</li>
+      <li>Tags: name and creation date.</li>
+      <li>Preferences: language, theme, mini-window height, and onboarding completion state.</li>
+    </ul>
+
+    <h2>Checks</h2>
+    <ul>
+      <li>No account login, cloud sync, analytics, WebView, backend calls, or hardcoded secrets.</li>
+      <li>No shell/process execution APIs, keychain usage, or credential handling.</li>
+      <li>UI-test hooks are compiled only in Debug builds.</li>
+      <li>Drag-and-drop no longer publishes task titles as plain text.</li>
+      <li>Release builds use a minimal App Sandbox entitlement.</li>
+      <li>Release zip rejects <code>.xctest</code>, <code>.xcresult</code>, <code>.dSYM</code>, <code>DerivedData</code>, test targets, <code>__MACOSX</code>, and <code>._</code> metadata files.</li>
+      <li>Release packaging rejects the debug <code>get-task-allow</code> entitlement and UI-test environment hooks in the compiled binary.</li>
+    </ul>
+
+    <h2>Residual Risks</h2>
+    <ul>
+      <li>Local SwiftData files are not app-level encrypted. Malware or a user with filesystem access to the account may be able to read local data.</li>
+      <li>GitHub always exposes automatic source archives for tags; normal users should download the attached <code>MiniDone-macOS-vX.Y.Z.zip</code> release asset.</li>
+      <li>Public distribution still needs Developer ID signing and notarization for the smoothest Gatekeeper experience.</li>
+    </ul>
+
+    <h2>Release Checklist</h2>
+    <ul>
+      <li>Run unit tests.</li>
+      <li>Run UI tests.</li>
+      <li>Run <code>scripts/package_release.sh</code>.</li>
+      <li>Upload the generated <code>dist/MiniDone-macOS-vX.Y.Z.zip</code> asset to GitHub Releases.</li>
+      <li>Use Developer ID signing and notarization before broad public distribution.</li>
+    </ul>
+  </main>
+</body>
+</html>

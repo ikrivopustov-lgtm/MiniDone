@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000201 = {isa = PBXBuildFile; fileRef = 100000000000000000000101; };
+		100000000000000000000202 = {isa = PBXBuildFile; fileRef = 100000000000000000000102; };
+		100000000000000000000203 = {isa = PBXBuildFile; fileRef = 100000000000000000000103; };
+		100000000000000000000204 = {isa = PBXBuildFile; fileRef = 100000000000000000000104; };
+		100000000000000000000205 = {isa = PBXBuildFile; fileRef = 100000000000000000000105; };
+		100000000000000000000207 = {isa = PBXBuildFile; fileRef = 100000000000000000000107; };
+		100000000000000000000208 = {isa = PBXBuildFile; fileRef = 100000000000000000000108; };
+		100000000000000000000209 = {isa = PBXBuildFile; fileRef = 100000000000000000000109; };
+		100000000000000000000210 = {isa = PBXBuildFile; fileRef = 100000000000000000000110; };
+		100000000000000000000211 = {isa = PBXBuildFile; fileRef = 100000000000000000000111; };
+		100000000000000000000212 = {isa = PBXBuildFile; fileRef = 100000000000000000000112; };
+		100000000000000000000213 = {isa = PBXBuildFile; fileRef = 100000000000000000000113; };
+		100000000000000000000214 = {isa = PBXBuildFile; fileRef = 100000000000000000000114; };
+		100000000000000000000215 = {isa = PBXBuildFile; fileRef = 100000000000000000000115; };
+		100000000000000000000216 = {isa = PBXBuildFile; fileRef = 100000000000000000000116; };
+		100000000000000000000217 = {isa = PBXBuildFile; fileRef = 100000000000000000000117; };
+		100000000000000000000218 = {isa = PBXBuildFile; fileRef = 100000000000000000000118; };
+		100000000000000000000219 = {isa = PBXBuildFile; fileRef = 100000000000000000000119; };
+		100000000000000000000220 = {isa = PBXBuildFile; fileRef = 100000000000000000000120; };
+		100000000000000000000221 = {isa = PBXBuildFile; fileRef = 100000000000000000000121; };
+		100000000000000000000222 = {isa = PBXBuildFile; fileRef = 100000000000000000000122; };
+		100000000000000000000223 = {isa = PBXBuildFile; fileRef = 100000000000000000000123; };
+		100000000000000000000224 = {isa = PBXBuildFile; fileRef = 100000000000000000000124; };
+		100000000000000000000225 = {isa = PBXBuildFile; fileRef = 100000000000000000000125; };
+		100000000000000000000226 = {isa = PBXBuildFile; fileRef = 100000000000000000000126; };
+		100000000000000000000227 = {isa = PBXBuildFile; fileRef = 100000000000000000000127; };
+		100000000000000000000228 = {isa = PBXBuildFile; fileRef = 100000000000000000000128; };
+		100000000000000000000229 = {isa = PBXBuildFile; fileRef = 100000000000000000000129; };
+		100000000000000000000230 = {isa = PBXBuildFile; fileRef = 100000000000000000000130; };
+		100000000000000000000231 = {isa = PBXBuildFile; fileRef = 100000000000000000000131; };
+		100000000000000000000505 = {isa = PBXBuildFile; fileRef = 100000000000000000000405; };
+		200000000000000000000201 = {isa = PBXBuildFile; fileRef = 200000000000000000000101; };
+		200000000000000000000202 = {isa = PBXBuildFile; fileRef = 200000000000000000000102; };
+		200000000000000000000203 = {isa = PBXBuildFile; fileRef = 200000000000000000000103; };
+		300000000000000000000201 = {isa = PBXBuildFile; fileRef = 300000000000000000000101; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		200000000000000000000020 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100000000000000000000001;
+			proxyType = 1;
+			remoteGlobalIDString = 100000000000000000000002;
+			remoteInfo = MiniDone;
+		};
+		300000000000000000000020 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100000000000000000000001;
+			proxyType = 1;
+			remoteGlobalIDString = 100000000000000000000002;
+			remoteInfo = MiniDone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000006 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200000000000000000000006 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniDoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		300000000000000000000006 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniDoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000101 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniDoneApp.swift; sourceTree = "<group>"; };
+		100000000000000000000102 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		100000000000000000000103 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		100000000000000000000104 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		100000000000000000000105 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTag.swift; sourceTree = "<group>"; };
+		100000000000000000000107 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
+		100000000000000000000108 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowFocusService.swift; sourceTree = "<group>"; };
+		100000000000000000000109 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		100000000000000000000110 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTextParser.swift; sourceTree = "<group>"; };
+		100000000000000000000111 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000112 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000113 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000114 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		100000000000000000000115 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSceneRoot.swift; sourceTree = "<group>"; };
+		100000000000000000000116 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTasksView.swift; sourceTree = "<group>"; };
+		100000000000000000000117 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		100000000000000000000118 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		100000000000000000000119 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMenuBarView.swift; sourceTree = "<group>"; };
+		100000000000000000000120 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniProjectPicker.swift; sourceTree = "<group>"; };
+		100000000000000000000121 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTaskListView.swift; sourceTree = "<group>"; };
+		100000000000000000000122 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTaskRowView.swift; sourceTree = "<group>"; };
+		100000000000000000000123 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
+		100000000000000000000124 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		100000000000000000000125 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		100000000000000000000126 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		100000000000000000000127 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		100000000000000000000128 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowMetadataView.swift; sourceTree = "<group>"; };
+		100000000000000000000129 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		100000000000000000000130 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		100000000000000000000131 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandMarkView.swift; sourceTree = "<group>"; };
+		100000000000000000000405 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		200000000000000000000101 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTextParserTests.swift; sourceTree = "<group>"; };
+		200000000000000000000102 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnumTests.swift; sourceTree = "<group>"; };
+		200000000000000000000103 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataModelTests.swift; sourceTree = "<group>"; };
+		300000000000000000000101 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniDoneUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100000000000000000000009 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200000000000000000000009 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300000000000000000000009 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000004,
+				200000000000000000000004,
+				300000000000000000000004,
+				100000000000000000000005,
+			);
+			sourceTree = "<group>";
+		};
+		100000000000000000000004 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000101,
+				100000000000000000000301,
+				100000000000000000000302,
+				100000000000000000000303,
+				100000000000000000000304,
+				100000000000000000000305,
+				100000000000000000000306,
+			);
+			path = MiniDone;
+			sourceTree = "<group>";
+		};
+		100000000000000000000005 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000006,
+				200000000000000000000006,
+				300000000000000000000006,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		200000000000000000000004 = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000101,
+				200000000000000000000102,
+				200000000000000000000103,
+			);
+			path = MiniDoneTests;
+			sourceTree = "<group>";
+		};
+		300000000000000000000004 = {
+			isa = PBXGroup;
+			children = (
+				300000000000000000000101,
+			);
+			path = MiniDoneUITests;
+			sourceTree = "<group>";
+		};
+		100000000000000000000301 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000102,
+				100000000000000000000103,
+				100000000000000000000104,
+				100000000000000000000105,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		100000000000000000000302 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000114,
+				100000000000000000000115,
+				100000000000000000000131,
+				100000000000000000000116,
+				100000000000000000000117,
+				100000000000000000000118,
+				100000000000000000000119,
+				100000000000000000000120,
+				100000000000000000000121,
+				100000000000000000000122,
+				100000000000000000000129,
+				100000000000000000000123,
+				100000000000000000000124,
+				100000000000000000000125,
+				100000000000000000000126,
+				100000000000000000000127,
+				100000000000000000000128,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		100000000000000000000303 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000111,
+				100000000000000000000112,
+				100000000000000000000113,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		100000000000000000000304 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000107,
+				100000000000000000000108,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		100000000000000000000305 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000109,
+				100000000000000000000130,
+				100000000000000000000110,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		100000000000000000000306 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000405,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000002 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000011;
+			buildPhases = (
+				100000000000000000000007,
+				100000000000000000000009,
+				100000000000000000000008,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniDone;
+			productName = MiniDone;
+			productReference = 100000000000000000000006;
+			productType = "com.apple.product-type.application";
+		};
+		200000000000000000000002 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200000000000000000000011;
+			buildPhases = (
+				200000000000000000000007,
+				200000000000000000000009,
+				200000000000000000000008,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				200000000000000000000021,
+			);
+			name = MiniDoneTests;
+			productName = MiniDoneTests;
+			productReference = 200000000000000000000006;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		300000000000000000000002 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 300000000000000000000011;
+			buildPhases = (
+				300000000000000000000007,
+				300000000000000000000009,
+				300000000000000000000008,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				300000000000000000000021,
+			);
+			name = MiniDoneUITests;
+			productName = MiniDoneUITests;
+			productReference = 300000000000000000000006;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000000001 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					100000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					200000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 100000000000000000000002;
+					};
+					300000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 100000000000000000000002;
+					};
+				};
+			};
+			buildConfigurationList = 100000000000000000000010;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ru,
+				Base,
+			);
+			mainGroup = 100000000000000000000003;
+			productRefGroup = 100000000000000000000005;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100000000000000000000002,
+				200000000000000000000002,
+				300000000000000000000002,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100000000000000000000008 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000505,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200000000000000000000008 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300000000000000000000008 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000000007 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000201,
+				100000000000000000000202,
+				100000000000000000000203,
+				100000000000000000000204,
+				100000000000000000000205,
+				100000000000000000000207,
+				100000000000000000000208,
+				100000000000000000000209,
+				100000000000000000000210,
+				100000000000000000000211,
+				100000000000000000000212,
+				100000000000000000000213,
+				100000000000000000000214,
+				100000000000000000000215,
+				100000000000000000000216,
+				100000000000000000000217,
+				100000000000000000000218,
+				100000000000000000000219,
+				100000000000000000000220,
+				100000000000000000000221,
+				100000000000000000000222,
+				100000000000000000000223,
+				100000000000000000000224,
+				100000000000000000000225,
+				100000000000000000000226,
+				100000000000000000000227,
+				100000000000000000000228,
+				100000000000000000000229,
+				100000000000000000000230,
+				100000000000000000000231,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200000000000000000000007 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200000000000000000000201,
+				200000000000000000000202,
+				200000000000000000000203,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300000000000000000000007 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300000000000000000000201,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		200000000000000000000021 = {
+			isa = PBXTargetDependency;
+			target = 100000000000000000000002;
+			targetProxy = 200000000000000000000020;
+		};
+		300000000000000000000021 = {
+			isa = PBXTargetDependency;
+			target = 100000000000000000000002;
+			targetProxy = 300000000000000000000020;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		100000000000000000000012 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		100000000000000000000013 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		100000000000000000000014 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+					ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+					CODE_SIGN_IDENTITY = "-";
+					CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MiniDone;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsAutomaticGraphicsSwitching = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krivoy.MiniDone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		100000000000000000000015 = {
+			isa = XCBuildConfiguration;
+				buildSettings = {
+					ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+					CODE_SIGN_ENTITLEMENTS = MiniDone/MiniDone.entitlements;
+					CODE_SIGN_IDENTITY = "-";
+					CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+					CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MiniDone;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsAutomaticGraphicsSwitching = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krivoy.MiniDone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		200000000000000000000014 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krivoy.MiniDoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniDone.app/Contents/MacOS/MiniDone";
+			};
+			name = Debug;
+		};
+		200000000000000000000015 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krivoy.MiniDoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniDone.app/Contents/MacOS/MiniDone";
+			};
+			name = Release;
+		};
+		300000000000000000000014 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krivoy.MiniDoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MiniDone;
+			};
+			name = Debug;
+		};
+		300000000000000000000015 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krivoy.MiniDoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MiniDone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000000010 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000012,
+				100000000000000000000013,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000011 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000014,
+				100000000000000000000015,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200000000000000000000011 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200000000000000000000014,
+				200000000000000000000015,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300000000000000000000011 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300000000000000000000014,
+				300000000000000000000015,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100000000000000000000001;
+}
