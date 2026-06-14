@@ -4,7 +4,7 @@ MiniDone is a quiet native macOS task manager for quick capture, focused work, a
 
 ## Download
 
-Download `MiniDone-macOS-v1.0.zip` from the release assets, unzip it, and open `MiniDone.app`.
+Download [MiniDone-macOS-v1.0.zip](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip), unzip it, and open `MiniDone.app`.
 
 GitHub also shows automatic **Source code** downloads. Those are for developers and include the repository files and tests. For normal installation, use the `MiniDone-macOS-v1.0.zip` app asset.
 

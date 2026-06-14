@@ -26,7 +26,15 @@ The product is intentionally calm: native macOS controls, local data, light and 
 
 ## Download
 
-Open the latest GitHub Release and download the attached `MiniDone-macOS-vX.Y.Z.zip` asset. Unzip it and open `MiniDone.app`.
+**Latest version:** [Download MiniDone v1.0 for macOS](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip)
+
+Unzip the file and open `MiniDone.app`.
+
+| Version | Platform | Download | Release notes |
+| --- | --- | --- | --- |
+| v1.0 | macOS 14+, Apple Silicon + Intel | [MiniDone-macOS-v1.0.zip](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip) | [View release](https://github.com/ikrivopustov-lgtm/MiniDone/releases/tag/v1.0) |
+
+All versions are available on the [GitHub Releases page](https://github.com/ikrivopustov-lgtm/MiniDone/releases).
 
 GitHub also shows automatic **Source code** downloads for every tag. Those are for developers and include the repository files and tests. For normal installation, use the `MiniDone-macOS-vX.Y.Z.zip` app asset.
 

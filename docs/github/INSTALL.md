@@ -4,11 +4,15 @@ MiniDone is distributed through GitHub Releases as a macOS app zip.
 
 ## Download
 
-1. Open the MiniDone repository on GitHub.
-2. Click **Releases** on the right side of the repository page.
-3. Open the latest release, for example `v1.0`.
-4. Download the attached app asset named `MiniDone-macOS-vX.Y.Z.zip`.
-5. Do not download GitHub's automatic **Source code** archives unless you want the developer project.
+Latest version: [Download MiniDone v1.0 for macOS](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip)
+
+| Version | Platform | Download | Release notes |
+| --- | --- | --- | --- |
+| v1.0 | macOS 14+, Apple Silicon + Intel | [MiniDone-macOS-v1.0.zip](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip) | [View release](https://github.com/ikrivopustov-lgtm/MiniDone/releases/tag/v1.0) |
+
+For older builds, open the [GitHub Releases page](https://github.com/ikrivopustov-lgtm/MiniDone/releases).
+
+Do not download GitHub's automatic **Source code** archives unless you want the developer project.
 
 ## Install
 
