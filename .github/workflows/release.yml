@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Build release zip
+      - name: Build release assets
         run: |
           chmod +x scripts/package_release.sh
           scripts/package_release.sh "${GITHUB_REF_NAME#v}"
@@ -26,11 +26,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          asset="$(ls dist/MiniDone-macOS-v*.zip | head -n 1)"
+          assets=(dist/MiniDone-macOS-v*.dmg dist/MiniDone-macOS-v*.zip)
           if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
-            gh release upload "$GITHUB_REF_NAME" "$asset" --clobber
+            gh release upload "$GITHUB_REF_NAME" "${assets[@]}" --clobber
           else
-            gh release create "$GITHUB_REF_NAME" "$asset" \
+            gh release create "$GITHUB_REF_NAME" "${assets[@]}" \
               --title "MiniDone ${GITHUB_REF_NAME}" \
               --notes-file docs/github/release-notes.md
           fi

@@ -4,9 +4,11 @@ MiniDone is a quiet native macOS task manager for quick capture, focused work, a
 
 ## Download
 
-Download [MiniDone-macOS-v1.0.zip](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip), unzip it, and open `MiniDone.app`.
+Download [MiniDone-macOS-v1.0.dmg](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.dmg), open the DMG, and drag `MiniDone.app` to Applications.
 
-GitHub also shows automatic **Source code** downloads. Those are for developers and include the repository files and tests. For normal installation, use the `MiniDone-macOS-v1.0.zip` app asset.
+ZIP fallback: [MiniDone-macOS-v1.0.zip](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip).
+
+GitHub also shows automatic **Source code** downloads. Those are for developers and include the repository files and tests. For normal installation, use the `MiniDone-macOS-v1.0.dmg` installer asset.
 
 ## Supported Macs
 
@@ -32,7 +34,7 @@ MiniDone has no account login, analytics, cloud backend, WebView, or network syn
 
 ## Release Integrity
 
-The release asset is built from the Release configuration and packaged as a clean app zip. The packaging script rejects test bundles, debug artifacts, UI-test launch hooks, debug entitlements, `DerivedData`, `dSYM`, `xcresult`, `__MACOSX`, and macOS `._` metadata files.
+The release assets are built from the Release configuration and packaged as a clean DMG installer plus ZIP archive. The packaging script rejects test bundles, debug artifacts, UI-test launch hooks, debug entitlements, `DerivedData`, `dSYM`, `xcresult`, `__MACOSX`, and macOS `._` metadata files.
 
 ## Note About macOS Gatekeeper
 

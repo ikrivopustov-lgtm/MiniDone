@@ -26,17 +26,17 @@ The product is intentionally calm: native macOS controls, local data, light and 
 
 ## Download
 
-**Latest version:** [Download MiniDone v1.0 for macOS](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip)
+**Latest version:** [Download MiniDone v1.0 DMG installer](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.dmg)
 
-Unzip the file and open `MiniDone.app`.
+Open the DMG and drag `MiniDone.app` to Applications.
 
-| Version | Platform | Download | Release notes |
-| --- | --- | --- | --- |
-| v1.0 | macOS 14+, Apple Silicon + Intel | [MiniDone-macOS-v1.0.zip](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip) | [View release](https://github.com/ikrivopustov-lgtm/MiniDone/releases/tag/v1.0) |
+| Version | Platform | DMG installer | ZIP archive | Release notes |
+| --- | --- | --- | --- | --- |
+| v1.0 | macOS 14+, Apple Silicon + Intel | [MiniDone-macOS-v1.0.dmg](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.dmg) | [MiniDone-macOS-v1.0.zip](https://github.com/ikrivopustov-lgtm/MiniDone/releases/download/v1.0/MiniDone-macOS-v1.0.zip) | [View release](https://github.com/ikrivopustov-lgtm/MiniDone/releases/tag/v1.0) |
 
 All versions are available on the [GitHub Releases page](https://github.com/ikrivopustov-lgtm/MiniDone/releases).
 
-GitHub also shows automatic **Source code** downloads for every tag. Those are for developers and include the repository files and tests. For normal installation, use the `MiniDone-macOS-vX.Y.Z.zip` app asset.
+GitHub also shows automatic **Source code** downloads for every tag. Those are for developers and include the repository files and tests. For normal installation, use the `MiniDone-macOS-vX.Y.Z.dmg` installer asset.
 
 Step-by-step install instructions live in [`docs/github/INSTALL.md`](docs/github/INSTALL.md).
 
@@ -227,19 +227,20 @@ Latest local verification:
 
 ## Package A GitHub Release
 
-Create a clean release zip that contains only `MiniDone.app`:
+Create clean release assets that contain only `MiniDone.app`:
 
 ```bash
 scripts/package_release.sh
 ```
 
-The script builds the Release configuration, verifies the app bundle, checks that test/debug artifacts are not inside the app or zip, confirms the release sandbox entitlement, rejects debug entitlements and UI-test launch hooks, removes macOS metadata files, and writes:
+The script builds the Release configuration, verifies the app bundle, checks that test/debug artifacts are not inside the app, ZIP, or DMG, confirms the release sandbox entitlement, rejects debug entitlements and UI-test launch hooks, removes macOS metadata files, and writes:
 
 ```text
+dist/MiniDone-macOS-v1.0.dmg
 dist/MiniDone-macOS-v1.0.zip
 ```
 
-Tag pushes like `v1.0` also run the GitHub Release workflow in `.github/workflows/release.yml` and upload the same clean app zip as the release asset. Release notes are stored in [`docs/github/release-notes.md`](docs/github/release-notes.md).
+Tag pushes like `v1.0` also run the GitHub Release workflow in `.github/workflows/release.yml` and upload the clean DMG installer plus ZIP archive as release assets. Release notes are stored in [`docs/github/release-notes.md`](docs/github/release-notes.md).
 
 ## Distribution Notes
 
@@ -249,6 +250,8 @@ The app builds locally, but public macOS distribution still needs a real Apple D
 - Developer ID signing for external distribution.
 - Hardened Runtime with a non-ad-hoc signature.
 - Notarization before sharing a downloadable build.
+
+The full trust checklist lives in [`docs/github/APPLE_TRUST.md`](docs/github/APPLE_TRUST.md).
 
 ## Project Structure
 
@@ -273,6 +276,7 @@ This repo includes ready-to-use visual assets:
 - `docs/github/feature-strip.svg` - feature overview strip.
 - `docs/github/social-preview.svg` - editable source for the repository social preview.
 - `docs/github/social-preview.png` - upload-ready repository social preview image.
+- `docs/github/APPLE_TRUST.md` - Developer ID signing and notarization checklist.
 - `docs/github/INSTALL.md` - user-facing installation guide.
 - `docs/github/RELEASING.md` - maintainer release checklist.
 - `docs/github/release-notes.md` - GitHub Release notes.

@@ -86,7 +86,7 @@
 
     <section class="summary">
       <p><span class="ok">Status:</span> no confirmed data exfiltration, secret leakage, network, WebView, shell execution, or credential-handling findings were found in the reviewed codebase.</p>
-      <p>MiniDone is local-first. Release packaging now produces a clean app zip and rejects debug/test artifacts before upload.</p>
+      <p>MiniDone is local-first. Release packaging now produces clean DMG and ZIP app assets and rejects debug/test artifacts before upload.</p>
     </section>
 
     <h2>Stored Data</h2>
@@ -104,14 +104,14 @@
       <li>UI-test hooks are compiled only in Debug builds.</li>
       <li>Drag-and-drop no longer publishes task titles as plain text.</li>
       <li>Release builds use a minimal App Sandbox entitlement.</li>
-      <li>Release zip rejects <code>.xctest</code>, <code>.xcresult</code>, <code>.dSYM</code>, <code>DerivedData</code>, test targets, <code>__MACOSX</code>, and <code>._</code> metadata files.</li>
+      <li>Release DMG and ZIP reject <code>.xctest</code>, <code>.xcresult</code>, <code>.dSYM</code>, <code>DerivedData</code>, test targets, <code>__MACOSX</code>, and <code>._</code> metadata files.</li>
       <li>Release packaging rejects the debug <code>get-task-allow</code> entitlement and UI-test environment hooks in the compiled binary.</li>
     </ul>
 
     <h2>Residual Risks</h2>
     <ul>
       <li>Local SwiftData files are not app-level encrypted. Malware or a user with filesystem access to the account may be able to read local data.</li>
-      <li>GitHub always exposes automatic source archives for tags; normal users should download the attached <code>MiniDone-macOS-vX.Y.Z.zip</code> release asset.</li>
+      <li>GitHub always exposes automatic source archives for tags; normal users should download the attached <code>MiniDone-macOS-vX.Y.Z.dmg</code> installer asset.</li>
       <li>Public distribution still needs Developer ID signing and notarization for the smoothest Gatekeeper experience.</li>
     </ul>
 
@@ -120,7 +120,7 @@
       <li>Run unit tests.</li>
       <li>Run UI tests.</li>
       <li>Run <code>scripts/package_release.sh</code>.</li>
-      <li>Upload the generated <code>dist/MiniDone-macOS-vX.Y.Z.zip</code> asset to GitHub Releases.</li>
+      <li>Upload the generated <code>dist/MiniDone-macOS-vX.Y.Z.dmg</code> and <code>dist/MiniDone-macOS-vX.Y.Z.zip</code> assets to GitHub Releases.</li>
       <li>Use Developer ID signing and notarization before broad public distribution.</li>
     </ul>
   </main>
